@@ -8,14 +8,20 @@ font-family: 'Raleway', sans-serif; */
     font-family: 'Raleway', sans-serif;
 }
 
+body {
+    height: 300vh;
+}
+
 /* Styling header section */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    margin: 10px 0;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    margin: 0 0 10px 0;
 }
 
 header p {
@@ -124,7 +130,24 @@ a {
 
 .home {
     background-image: url('/img/header-bg.png');
-
-
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
+
+.about--text {
+    padding: 400px 20px 0 20px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+}
+
+.about--text h2 {}
+
+.about--text p {
+    margin: 10px 0;
+}
+
+
+.getFreeBtn {}
