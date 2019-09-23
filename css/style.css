@@ -15,12 +15,13 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 10px 20px;
+    margin: 10px 0;
 }
 
 header p {
     font-family: 'Pacifico', cursive;
     font-size: 40px;
+    margin: 10px 20px;
 }
 
 /* Creating hamburger Menu */
@@ -31,7 +32,7 @@ header p {
     cursor: pointer;
     background-color: transparent;
     border: 0;
-    margin: 0;
+    margin: 0 20px;
 
 }
 
@@ -98,6 +99,8 @@ header p {
     display: block;
     top: 100%;
     left: 0;
+    background-color: white;
+
 }
 
 ul {
@@ -114,6 +117,14 @@ a {
     display: block;
     text-decoration: none;
     color: black;
+    text-transform: uppercase;
 }
 
 /* End of styling menu */
+
+.home {
+    background-image: url('/img/header-bg.png');
+
+
+
+}
