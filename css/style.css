@@ -129,7 +129,7 @@ a {
 /* End of styling menu */
 
 .home {
-    background-image: url('/img/header-bg.png');
+    background-image: url('../img/header-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
