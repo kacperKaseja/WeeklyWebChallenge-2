@@ -21,14 +21,13 @@ header {
     position: fixed;
     width: 100%;
     background-color: white;
-    margin: 0 0 10px 0;
-    order: 2;
+    z-index: 1;
 }
 
 header p {
     font-family: 'Pacifico', cursive;
     font-size: 40px;
-    margin: 10px 20px;
+    margin: 0 20px;
 }
 
 /* Creating hamburger Menu */
@@ -131,17 +130,42 @@ a {
 
 .home {
     background-image: url('../img/header-bg.png');
-    background-position: center;
+    overflow: hidden;
+    background-position: -400px 80px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    order: 2;
+    z-index: -1;
 }
 
-.about--text {}
+.home__about-text {
+    position: relative;
+    left: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+}
 
+.home__h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
 
+.home__get-free-btn {
+    margin: 20px 0;
+    width: 170px;
+    padding: 10px 10px;
+    border: none;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 2px rgb(98, 98, 98);
+    font-size: 20px;
+}
 
-.about--text p {
-    margin: 10px 0;
+.home__logo {
+    position: absolute;
+    width: 15%;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
