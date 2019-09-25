@@ -120,10 +120,15 @@ li {
 }
 
 a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: black;
+
     text-transform: uppercase;
+}
+
+a:hover {
+    border-top: 2px solid rgb(255, 115, 0);
 }
 
 /* End of styling menu */
@@ -131,7 +136,7 @@ a {
 .home {
     background-image: url('../img/header-bg.png');
     overflow: hidden;
-    background-position: -400px 80px;
+    background-position: 60% 70px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -168,4 +173,8 @@ a {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.border-top {
+    border-top: 2px solid black;
 }
