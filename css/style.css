@@ -22,6 +22,7 @@ header {
     width: 100%;
     background-color: white;
     margin: 0 0 10px 0;
+    order: 2;
 }
 
 header p {
@@ -129,25 +130,18 @@ a {
 /* End of styling menu */
 
 .home {
-    background-image: url('/img/header-bg.png');
+    background-image: url('../img/header-bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    order: 2;
 }
 
-.about--text {
-    padding: 400px 20px 0 20px;
-    position: absolute;
-    left: 0;
-    top: 10%;
-}
+.about--text {}
 
-.about--text h2 {}
+
 
 .about--text p {
     margin: 10px 0;
 }
-
-
-.getFreeBtn {}
