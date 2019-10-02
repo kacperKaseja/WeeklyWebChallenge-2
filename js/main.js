@@ -2,6 +2,9 @@
 const hamburgerBtn = document.querySelector('.hamburger');
 const menu = document.querySelector('nav')
 
+const headerHeight = document.querySelector('header').clientHeight
+console.log(headerHeight)
+
 const hamburgerTransform = () => {
     hamburgerBtn.classList.toggle('hamburger--active');
     menu.classList.toggle('menu--active');
@@ -20,8 +23,11 @@ function navSelection(e) {
     menu.classList.remove('menu--active');
     hamburgerBtn.classList.toggle('hamburger--active');
 }
-// scroll function
-navLinks.forEach(link => link.addEventListener('click', navSelection))
+
+
+
+// // scroll function
+// navLinks.forEach(link => link.addEventListener('click', navSelection))
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -31,8 +37,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth',
         });
     });
-
 });
+
+
+
 
 
 
