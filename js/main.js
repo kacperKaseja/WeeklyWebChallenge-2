@@ -26,12 +26,11 @@ function navSelection(e) {
 
 
 
-// // scroll function
-// navLinks.forEach(link => link.addEventListener('click', navSelection))
-
+//scrolling function
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        menu.classList.remove('menu--active');
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             block: 'start',
             behavior: 'smooth',
@@ -40,20 +39,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+const viewMoreBtn = document.querySelector('.gallery__button')
 
-
-
-
-
-// let mainNavLinks = document.querySelectorAll("nav ul li a");
-
-// mainNavLinks.forEach(link => {
-//     link.addEventListener("click", event => {
-//         event.preventDefault();
-//         let target = document.querySelector(event.target.hash);
-//         target.scrollIntoView({
-//             behavior: "smooth",
-//             block: "start"
-//         });
-//     });
-// });
+viewMoreBtn.addEventListener('click', () => {
+    if (viewMoreBtn.textContent === "View More") {
+        document.querySelector('.conteiner__hide').style.display = `block`;
+        viewMoreBtn.textContent = `Hide`;
+    } else {
+        document.querySelector('.conteiner__hide').style.display = `none`;
+        viewMoreBtn.textContent = `View More`;
+    }
+})

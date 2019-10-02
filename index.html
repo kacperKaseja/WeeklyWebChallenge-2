@@ -23,7 +23,7 @@
                 <li><a href="#home" class="menu__navigation">Home</a></li>
                 <li><a href="#about-us" class="menu__navigation">About</a></li>
                 <li><a href="#service" class="menu__navigation">Service</a></li>
-                <li><a href="" class="menu__navigation">Gallery</a></li>
+                <li><a href="#gallery" class="menu__navigation">Gallery</a></li>
                 <li><a href="" class="menu__navigation">Blog</a></li>
                 <li><a href="" class="menu__navigation">Contact</a></li>
             </ul>
@@ -43,7 +43,7 @@
 
     <section class="about-us" id="about-us">
         <div class="about-us__text">
-            <h2 class="about-us__h2">About Us</h2>
+            <h2 class="about-us__h2 headings">About Us</h2>
             <p class="about-us__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco
                 laboris nisi ut aliquip
@@ -58,7 +58,7 @@
         </secttion>
         <div class="service__image-text">
             <img src="./img/services.png" alt="Image of sliced tomatoe" class="image-text_image">
-            <h2 class="image-text__h2">Our Service</h2>
+            <h2 class="image-text__h2 headings">Our Service</h2>
         </div>
         <div class="service__offert">
             <div class="offert__btn">
@@ -83,9 +83,9 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="gallery__text">
-            <h2 class="gallery__h2">Gallery</h2>
+            <h2 class="gallery__h2 headings">Gallery</h2>
             <p class="gallery__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco
                 laboris nisi ut aliquip
@@ -96,10 +96,24 @@
             <div class="img-container"><img class="image" src="./img/gallery-1.jpg" alt=""></div>
             <div class="img-container"><img class="image" src="./img/gallery-2.jpg" alt=""></div>
             <div class="img-container"><img class="image" src="./img/gallery-3.jpg" alt=""></div>
-            <div class="img-container"><img class="image" src="./img/gallery-4.jpg" alt=""></div>
-            <div class="img-container"><img class="image" src="./img/gallery-5.jpg" alt=""></div>
+            <div class="conteiner__hide">
+                <div class="img-container"><img class="image" src="./img/gallery-4.jpg" alt=""></div>
+                <div class="img-container"><img class="image" src="./img/gallery-5.jpg" alt=""></div>
+            </div>
         </div>
+        <button class="gallery__button">View More</button>
     </section>
+    <section class="subscribe">
+        <h2>Subscribe To Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repellendus consectetur, repellat culpa at
+            odio consequuntur alias quasi ratio
+            cumque nisi deserunt.</p>
+        <form action="" class="subscribe__form">
+            <input type="email" placeholder="Your email aderess..." class="form__input">
+            <input type="button" value="Subscribe" class="form__subscribe">
+        </form>
+    </section>
+
 
     <script src="js/main.js"></script>
 </body>
