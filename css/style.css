@@ -297,3 +297,50 @@ a:hover {
     color: white;
     box-shadow: 2px 2px 5px black;
 }
+
+/* Add to section baground whit opacity */
+.subscribe {
+    padding: 70px 20px 30px 20px;
+    position: relative;
+}
+
+.subscribe::after {
+    content: "";
+    background: url('../img/subscribe-bg.png');
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Add to section background whit opacity */
+.subscribe__h2 {
+    font-size: 30px
+}
+
+.subscribe__text {
+    margin: 20px 0;
+}
+
+
+.form__input {
+    width: 100%;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 5px 5px;
+}
+
+.form__subscribe-button {
+    width: 150px;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    background-color: #96b92c;
+    border: none;
+    color: white;
+    box-shadow: 2px 2px 5px black;
+}

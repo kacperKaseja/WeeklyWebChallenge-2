@@ -31,6 +31,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         menu.classList.remove('menu--active');
+        hamburgerBtn.classList.remove('hamburger--active');
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             block: 'start',
             behavior: 'smooth',
