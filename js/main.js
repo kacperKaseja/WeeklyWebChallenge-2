@@ -1,8 +1,7 @@
 // Function of hamburger menu
 const hamburgerBtn = document.querySelector('.hamburger');
 const menu = document.querySelector('nav')
-
-
+const divWrap = document.querySelector('.footer');
 const headerHeight = document.querySelector('header').clientHeight
 console.log(headerHeight)
 
@@ -61,7 +60,8 @@ const articles = [...document.querySelectorAll('.blog__post')];
 articles.forEach(article => {
     article.addEventListener('click', (e) => {
         const index = articles.indexOf(article)
-        console.log(index)
+        console.log(index);
+        [...document.querySelectorAll('.blog__text-wrapper')].style.transform = `translateX(-120%)`;
 
     })
 })
