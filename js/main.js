@@ -2,6 +2,7 @@
 const hamburgerBtn = document.querySelector('.hamburger');
 const menu = document.querySelector('nav')
 
+
 const headerHeight = document.querySelector('header').clientHeight
 console.log(headerHeight)
 
@@ -16,13 +17,13 @@ hamburgerBtn.addEventListener('click', hamburgerTransform)
 
 const navLinks = [...document.querySelectorAll('.menu__navigation')];
 
-function navSelection(e) {
-    // e.preventDefault();
-    console.log('adsasdas');
-    this.classList.add('.border-top');
-    menu.classList.remove('menu--active');
-    hamburgerBtn.classList.toggle('hamburger--active');
-}
+// function navSelection(e) {
+//     // e.preventDefault();
+//     console.log('adsasdas');
+//     this.classList.add('.border-top');
+//     menu.classList.remove('menu--active');
+//     hamburgerBtn.classList.toggle('hamburger--active');
+// }
 
 
 
@@ -50,4 +51,17 @@ viewMoreBtn.addEventListener('click', () => {
         document.querySelector('.conteiner__hide').style.display = `none`;
         viewMoreBtn.textContent = `View More`;
     }
+})
+
+
+//Funkcja pobierajaca index danego elementu
+const articles = [...document.querySelectorAll('.blog__post')];
+
+
+articles.forEach(article => {
+    article.addEventListener('click', (e) => {
+        const index = articles.indexOf(article)
+        console.log(index)
+
+    })
 })

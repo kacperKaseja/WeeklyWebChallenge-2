@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <p>Cahee</p>
+        <p class="cahee__logo">Cahee</p>
         <button class="hamburger">
             <span class="hamburger__box">
                 <span class="hamburger__inner "></span>
@@ -25,7 +25,7 @@
                 <li><a href="#service" class="menu__navigation">Service</a></li>
                 <li><a href="#gallery" class="menu__navigation">Gallery</a></li>
                 <li><a href="#blog" class="menu__navigation">Blog</a></li>
-                <li><a href="" class="menu__navigation">Contact</a></li>
+                <li><a href="#contact" class="menu__navigation">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -58,7 +58,7 @@
         </secttion>
         <div class="service__image-text">
             <img src="./img/services.png" alt="Image of sliced tomatoe" class="image-text_image">
-            <h2 class="image-text__h2 headings">Our Service</h2>
+            <h2 class="image-text__h2 h2">Our Service</h2>
         </div>
         <div class="service__offert">
             <div class="offert__btn">
@@ -85,7 +85,7 @@
     </section>
     <section class="gallery" id="gallery">
         <div class="gallery__text">
-            <h2 class="gallery__h2">Gallery</h2>
+            <h2 class="gallery__h2 h2">Gallery</h2>
             <p class="gallery__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco
                 laboris nisi ut aliquip
@@ -115,31 +115,64 @@
         </form>
     </section>
     <section class="blog" id="blog">
-        <h2 class="blog__h2">Blog</h2>
+        <h2 class="blog__h2 h2">Blog</h2>
         <p class="blog__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis voluptates aperiam
             atvoluptatem similique consectetur. Voluptate dicta, voluptatum eius fuga commodi suscipit iusto alias sequi
             voluptatem. Ad unde, autem esse at, harum repellendus laborum ipsum doloribus.?</p>
         <article class="blog__post blog__post-1">
             <span class="span__blog-date"><span class="blog-date__fat">20</span>NOV</span>
-            <h3 class="post__h3">Green Smoothies: To much of a Good Thing?</h3>
-            <p class="post__author">By Auskteezz - 2 houers ago</p>
+            <div class="blog__text-wrapper">
+                <h3 class="post__h3">Green Smoothies: To much of a Good Thing?</h3>
+                <p class="post__author">By Auskteezz - 2 houers ago</p>
+            </div>
         </article>
         <article class="blog__post blog__post-2"> <span class="span__blog-date"><span
                     class="blog-date__fat">14</span>NOV</span>
-            <h3 class="post__h3">Growing Food and a "Thirst" for Innovationa</h3>
-            <p class="post__author">By Auskteezz - 4 houers ago</p>
+            <div class="blog__text-wrapper">
+                <h3 class="post__h3">Growing Food and a "Thirst" for Innovationa</h3>
+                <p class="post__author">By Auskteezz - 4 houers ago</p>
+            </div>
         </article>
         <article class="blog__post blog__post-3">
             <span class="span__blog-date"><span class="blog-date__fat">10</span>NOV</span>
-            <h3 class="post__h3">Pesticides & Food: What You Need to Know</h3>
-            <p class="post__author">By Auskteezz - 6 houers ago</p>
+            <div class="blog__text-wrapper">
+                <h3 class="post__h3">Pesticides & Food: What You Need to Know</h3>
+                <p class="post__author">By Auskteezz - 6 houers ago</p>
+            </div>
         </article>
 
         <button class="button blog__button">View More</button>
     </section>
+    <section class="contact" id="contact">
+        <h2 class="h2">Contact</h2>
+        <p class="text">For new projects, udeas ,business or anything
+            uou'd like to discuss, contact with me!
+        </p>
 
-
-
+        <div class="contact__inner-wrapper">
+            <form class="contact__form" action="">
+                <input class="contact__input" type="text" placeholder="Your Name">
+                <input class="contact__input" type="email" placeholder="Your email">
+                <input class="contact__input" type="number" placeholder="Your phone number">
+                <textarea name="" id="" cols="30" rows="10" class="contact__input"
+                    placeholder="Your Message"></textarea>
+            </form>
+            <div class="contact_data">
+                <h3 class="contact__h3 h3">Address</h3>
+                <span>123 City of Compton </span>
+                <h3 class="contact__h3 h3">Email</h3>
+                <span>cahee@domain.com</span>
+                <h3 class="contact__h3 h3">phone</h3>
+                <span>+012 345 6789</span>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__paragrapf">Made whit <span class="paragraf__span">love</span>
+            by <span class="paragraf__span">KKacper</span></p>
+        <p class="cahee__logo cahee__logo--footer">Cahee</p>
+        <p class="footer__paragrapf"> &copy; 2019.All right reserved</p>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>
