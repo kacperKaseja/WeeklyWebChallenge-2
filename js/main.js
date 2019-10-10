@@ -55,13 +55,13 @@ viewMoreBtn.addEventListener('click', () => {
 
 //Funkcja pobierajaca index danego elementu
 const articles = [...document.querySelectorAll('.blog__post')];
-
+const textWrapper = [...document.querySelectorAll('.blog__text-wrapper')];
 
 articles.forEach(article => {
     article.addEventListener('click', (e) => {
         const index = articles.indexOf(article)
         console.log(index);
-        [...document.querySelectorAll('.blog__text-wrapper')].style.transform = `translateX(-120%)`;
-
+        console.log(textWrapper[index]);
+        textWrapper[index].style.transform = "translateY(0)";
     })
 })
