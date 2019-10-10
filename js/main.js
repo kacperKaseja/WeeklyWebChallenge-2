@@ -2,8 +2,7 @@
 const hamburgerBtn = document.querySelector('.hamburger');
 const menu = document.querySelector('nav')
 const divWrap = document.querySelector('.footer');
-const headerHeight = document.querySelector('header').clientHeight
-console.log(headerHeight)
+
 
 const hamburgerTransform = () => {
     hamburgerBtn.classList.toggle('hamburger--active');
@@ -23,8 +22,6 @@ const navLinks = [...document.querySelectorAll('.menu__navigation')];
 //     menu.classList.remove('menu--active');
 //     hamburgerBtn.classList.toggle('hamburger--active');
 // }
-
-
 
 //scrolling function
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -65,3 +62,19 @@ articles.forEach(article => {
         textWrapper[index].style.transform = "translateY(0)";
     })
 })
+
+
+//scrolling function
+
+
+const nav = document.querySelector('header'); // Identify target
+
+window.addEventListener('scroll', function (event) { // To listen for event
+    event.preventDefault();
+
+    if (window.scrollY > 80) { // Just an example
+        nav.style.backgroundColor = '#fff'; // or default color
+    } else {
+        nav.style.backgroundColor = 'transparent';
+    }
+});
