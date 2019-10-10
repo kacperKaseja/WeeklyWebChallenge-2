@@ -9,9 +9,7 @@ font-family: 'Raleway', sans-serif; */
     /* font-size: 17px; */
 }
 
-body {
-    height: 300vh;
-}
+
 
 /* Styling header section */
 
@@ -23,6 +21,14 @@ header {
     width: 100%;
     background-color: white;
     z-index: 1;
+}
+
+.header-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .cahee__logo {
@@ -135,10 +141,13 @@ a:hover {
 
 .home {
     background-image: url('../img/header-bg.png');
+    background-repeat: no-repeat;
     overflow: hidden;
     background-position: 60% 70px;
-    background-repeat: no-repeat;
     background-size: cover;
+}
+
+.home-wrapper {
     height: 100vh;
     z-index: -1;
 }
@@ -198,6 +207,12 @@ a:hover {
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
+}
+
+.about-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-us__h2 {
@@ -450,4 +465,144 @@ a:hover {
 
 .paragraf__span {
     color: rgb(243, 71, 71);
+}
+
+@media (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        position: fixed;
+        background-color: transparent;
+    }
+
+    .header-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .cahee__logo {
+        display: block;
+    }
+
+    .home {
+        background-position: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: end;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
+
+    li {
+        margin-right: 10px;
+        font-size: 16px;
+        display: inline-block;
+        width: 75px;
+    }
+
+    .home-wrapper {
+        position: relative;
+        width: 80%;
+        height: 70vh;
+        margin: 0 auto;
+        z-index: 0;
+    }
+
+    .home__about-text {
+        width: 50%;
+    }
+
+    .home__logo {
+        width: 50px;
+    }
+
+    .about-us-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-us__image {
+        width: 50%;
+    }
+
+    div.about-us__text {
+        display: inline-block;
+        width: 45%;
+    }
+
+    p.about-us__text {
+        display: inline-block;
+    }
+
+    .service-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    div.gallery__text {
+        width: 50%;
+    }
+
+    .gallery_wrapper {
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .img-container:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .img-container:nth-child(2) {
+        grid-column-start: 3;
+        grid-column-end: 3;
+    }
+
+    .img-container:nth-child(3) {
+        width: 35%;
+    }
+
+    .subscribe {
+        background: url('../img/subscribe-bg.png') no-repeat;
+        background-size: 50%;
+        background-position: center right;
+    }
+
+    .subscribe::after {
+        display: none;
+    }
+
+    .subscribe__wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
