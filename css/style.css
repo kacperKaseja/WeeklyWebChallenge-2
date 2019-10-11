@@ -420,7 +420,6 @@ a:hover {
 .contact__form {
     display: flex;
     flex-direction: column;
-
 }
 
 .contact__input {
@@ -604,5 +603,76 @@ a:hover {
     .subscribe__wrapper {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .subscribe__text {
+        width: 400px;
+    }
+
+    .subscribe__form {
+        width: 400px;
+    }
+
+    .blog__wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .blog__article-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+    .blog__post {
+        width: 200px;
+        height: 200px;
+        margin: 20px 0;
+        position: relative;
+        display: flex;
+        padding: 20px 20px;
+        flex-direction: column;
+        justify-content: flex-end;
+        overflow: hidden;
+    }
+
+    .blog__text-wrapper {
+        transform: translateX(200%)
+    }
+
+    .contact__inner-wrapper {
+        flex-direction: row;
+    }
+
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__input {
+        color: white;
+        font-size: 18px;
+        margin: 10px 0;
+        padding: 10px 10px;
+        border: none;
+        background-color: rgba(0, 196, 196, .452)
+    }
+
+    .contact__input::placeholder {
+        color: white;
+    }
+
+    .contact__input:focus {
+        background-color: rgb(0, 196, 196);
+        border-left: 6px solid rgb(0, 93, 93);
+    }
+
+    .contact_data {
+        width: 50%;
+        margin: 10px 30px;
+        font-size: 18px;
+        text-align: left;
+        text-shadow: 0.5px 0.5px 2px rgb(138, 138, 138);
     }
 }
