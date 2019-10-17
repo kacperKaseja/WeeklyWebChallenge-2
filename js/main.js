@@ -36,6 +36,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+//Add functionality to gallery button view/Hide
 
 const viewMoreBtn = document.querySelector('.gallery__button')
 const divHide = document.querySelector('.conteiner__hide')
@@ -55,7 +56,6 @@ viewMoreBtn.addEventListener('click', () => {
 //Funkcja pobierajaca index danego elementu
 const articles = [...document.querySelectorAll('.blog__post')];
 
-
 articles.forEach(article => {
     article.addEventListener('click', (e) => {
         const index = articles.indexOf(article)
@@ -66,8 +66,7 @@ articles.forEach(article => {
 })
 
 
-//scrolling function
-
+//Listenert to scroll functio and changing header background-color;
 
 const nav = document.querySelector('header'); // Identify target
 

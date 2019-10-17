@@ -583,7 +583,7 @@ a:hover {
     .gallery__container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(11, 5vw);
+        grid-template-rows: repeat(7, 5vw);
         grid-gap: 10px;
     }
 
@@ -685,10 +685,12 @@ a:hover {
     }
 
     .contact__inner-wrapper {
-        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
     }
 
     .contact__form {
+        width: 50%;
         display: flex;
         flex-direction: column;
     }
@@ -712,10 +714,16 @@ a:hover {
     }
 
     .contact_data {
-        width: 50%;
+        display: inline-block;
+        width: 40%;
         margin: 10px 30px;
         font-size: 18px;
         text-align: left;
         text-shadow: 0.5px 0.5px 2px rgb(138, 138, 138);
+    }
+
+    .contact-wrapper {
+        width: 90%;
+        margin: 0 auto;
     }
 }
