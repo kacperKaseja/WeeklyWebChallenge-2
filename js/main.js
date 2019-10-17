@@ -38,10 +38,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 const viewMoreBtn = document.querySelector('.gallery__button')
+const divHide = document.querySelector('.conteiner__hide')
 
 viewMoreBtn.addEventListener('click', () => {
     if (viewMoreBtn.textContent === "View More") {
-        document.querySelector('.conteiner__hide').style.display = `block`;
+        divHide.style.display = `flex`;
+        divHide.classList.add(`flex-column`);
         viewMoreBtn.textContent = `Hide`;
     } else {
         document.querySelector('.conteiner__hide').style.display = `none`;

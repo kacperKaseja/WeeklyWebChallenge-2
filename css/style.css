@@ -286,6 +286,10 @@ a:hover {
     text-align: center;
 }
 
+.flex-column {
+    flex-direction: column;
+}
+
 .img-container {
     width: 100%;
     margin: 20px 0;
@@ -293,6 +297,12 @@ a:hover {
 
 .conteiner__hide {
     display: none;
+}
+
+.hide__img.img-container {
+    display: inline-block;
+
+    width: 100%;
 }
 
 .image {
@@ -572,23 +582,56 @@ a:hover {
 
     .gallery__container {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(11, 5vw);
+        grid-gap: 10px;
     }
+
+
 
     .img-container:nth-child(1) {
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
 
     .img-container:nth-child(2) {
-        grid-column-start: 3;
-        grid-column-end: 3;
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
 
     .img-container:nth-child(3) {
-        width: 35%;
+
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 5;
     }
+
+    .conteiner__hide {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 7;
+        grid-row-end: 12;
+    }
+
+    .flex-column {
+        flex-direction: row;
+    }
+
+    .hide__img.img-container {
+        display: inline-block;
+
+        width: 47%;
+    }
+
+
 
     .subscribe {
         background: url('../img/subscribe-bg.png') no-repeat;
