@@ -60,8 +60,8 @@ articles.forEach(article => {
     article.addEventListener('click', (e) => {
         const index = articles.indexOf(article)
         console.log(index);
-        [...document.querySelectorAll('.blog__text-wrapper')].style.transform = `translateX(-120%)`;
 
+        article.querySelector('.blog__text-wrapper').style.transform = `translateX(0)`;
     })
 })
 
