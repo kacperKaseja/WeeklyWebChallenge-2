@@ -36,12 +36,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+//Add functionality to gallery button view/Hide
 
 const viewMoreBtn = document.querySelector('.gallery__button')
+const divHide = document.querySelector('.conteiner__hide')
 
 viewMoreBtn.addEventListener('click', () => {
     if (viewMoreBtn.textContent === "View More") {
-        document.querySelector('.conteiner__hide').style.display = `block`;
+        divHide.style.display = `flex`;
+        divHide.classList.add(`flex-column`);
         viewMoreBtn.textContent = `Hide`;
     } else {
         document.querySelector('.conteiner__hide').style.display = `none`;
@@ -52,20 +55,18 @@ viewMoreBtn.addEventListener('click', () => {
 
 //Funkcja pobierajaca index danego elementu
 const articles = [...document.querySelectorAll('.blog__post')];
-const textWrapper = [...document.querySelectorAll('.blog__text-wrapper')];
 
 articles.forEach(article => {
     article.addEventListener('click', (e) => {
         const index = articles.indexOf(article)
         console.log(index);
-        console.log(textWrapper[index]);
-        textWrapper[index].style.transform = "translateY(0)";
+
+        article.querySelector('.blog__text-wrapper').style.transform = `translateX(0)`;
     })
 })
 
 
-//scrolling function
-
+//Listenert to scroll functio and changing header background-color;
 
 const nav = document.querySelector('header'); // Identify target
 
